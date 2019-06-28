@@ -7,6 +7,12 @@ This service analyzes semantics of Russian reviews about smartphones.
 ![](examples/2.png)
 ![](examples/3.png)
 
+## Requirements
+Server requires installed Python and libraries:
+* flask
+* sklearn
+* numpy
+
 ## How to launch
 1. Clone repository
 
