@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Анализатор тональности отзывов</title>
+	 	<link href="/static/bootstrap.min.css" rel="stylesheet">
+	    <link href="/static/cover.css" rel="stylesheet">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            a.example-link {
+                border-bottom: 1px dotted white;
+            }
+            a.example-link:hover {
+                text-decoration: none;
+            }
+            .example {
+                margin-top: 10px; 
+                text-align: center; 
+                font-size: 70%;
+            }
+            body {
+                background: rgb(107,36,131);
+                background: linear-gradient(74deg, rgba(107,36,131,1) 0%, rgba(39,39,128,1) 66%, rgba(0,65,134,1) 100%);
+            }
+            .lead {
+                text-align: center;
+            }
+            h2.lead {
+                font-size: 240%;
+            }
+            h3.logo {
+                text-align: center;
+                font-size: 220%;
+            }
+            .cover-description {
+                text-align: center; 
+                margin-top: 8%; 
+                margin-bottom: 1%;
+            }
+            .cover-result {
+                color: green;
+                border: 3px solid green;
+                border-radius: 12px;
+                padding: 14px 25px;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity 0.7s ease-out 0s;
+            }
+            .cover-result.enabled {
+                visibility: visible;
+                opacity: 1;
+            }
+            .result-cnt {
+                margin-top: 8%;
+            }
+            .gradhead {
+                background: rgb(119,93,158);
+                background: linear-gradient(62deg, rgba(119,93,158,0.9) 0%, rgba(69,104,162,0.9) 40%, rgba(12, 161, 167, 0.7) 100%);
+                height: 80%;
+            }
+            h3.logo {
+                margin-top: 0.7rem;
+            }
+        </style>
+	</head>
+	<body>
+<div  class="d-flex w-100 h-25 mx-auto flex-column">
+    <header class="mt-auto mb-auto gradhead w-100 d-flex align-items-center justify-content-center">
+        <div class="inner">
+          <h3 class="logo">Анализатор тональности отзывов</h3>
+        </div>
+    </header>
+</div><div class="cover-container d-flex w-100 h-75 p-3 mx-auto flex-column flex-end">
+  
+
+  <main role="main" class="inner cover">
+    <h2 class="lead">Демонстрация сентимент-анализа отзывов о смартфонах</h2>
+    <p class="lead cover-description">Пожалуйста, введите текст:</p>
+    <div class="lead" style="margin-top: 15px;">
+        
+        <div class="input-group">
+          <input type="text" class="form-control" id="form_sentence">
+          <span class="input-group-btn">
+            <button id="form_submit" class="btn btn-primary" type="button">Анализировать</button>
+          </span>
+        </div>
+
+        <p class="example">Пример: <a href="#" class="example-link">У этого телефона качественный корпус и очень хороший экран.</a></p>
+
+    </div>
+    <p class="lead result-cnt"><span class="cover-result">Этот контент суперпозитивный!</span></p>
+  </main>
+  <footer class="mastfoot mt-auto">
+    <div class="inner"></div>
+  </footer>
+
+</div>
+<script src="/static/main.js"></script>
+</body>
+</html>
